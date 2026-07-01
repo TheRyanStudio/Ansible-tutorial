@@ -8,6 +8,7 @@
     apt:
       name: apache2
       state: latest
+    when: ansible_distribution_version == "Ubuntu"
 
   - name: update repository index
     apt:
